@@ -1,15 +1,14 @@
 const root = document.documentElement;
-const toggle = document.querySelector('.light-switch');
+const toggle = document.querySelector('.theme-toggle');
 const themeColor = document.querySelector('meta[name="theme-color"]');
 
 function updateTheme(theme) {
-  const light = theme === 'light';
+  const dark = theme === 'dark';
   root.dataset.theme = theme;
-  toggle.setAttribute('aria-pressed', String(light));
-  toggle.setAttribute('aria-label', `Switch to ${light ? 'dark' : 'light'} mode`);
+  toggle.setAttribute('aria-pressed', String(dark));
+  toggle.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} mode`);
   toggle.title = toggle.getAttribute('aria-label');
-  toggle.querySelector('.switch-hint').textContent = light ? 'lights off' : 'lights on';
-  themeColor.content = light ? '#fafafa' : '#0a0a0c';
+  themeColor.content = dark ? '#232136' : '#fafafa';
 }
 
 updateTheme(root.dataset.theme);

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="description" content="Vinícius Anjos — Data Engineer at iFood. Building data pipelines, analytical tools, and connections between data and decisions.">
+  <meta property="og:title" content="Vinícius Anjos — Data Engineer">
+  <meta property="og:description" content="Data pipelines, useful insights, and a little curiosity. Based in São Paulo, Brazil.">
+  <meta property="og:type" content="profile">
+  <title>Vinícius Anjos — Data Engineer</title>
+  <link rel="canonical" href="https://anjos.dev/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    try {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.dataset.theme = 'dark';
+        document.querySelector('meta[name="theme-color"]').content = '#232136';
+      }
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme.js" defer></script>
+</head>
+<body>
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode" hidden>
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12.5 2.5C6.8 2.5 2 7.2 2 12.8C2 18.4 6.5 22 12 22C16.4 22 20 19.2 21.5 15.5C17.6 18.6 12.5 18 9.5 14.5C6.2 10.6 7.4 5.7 12.5 2.5Z"/>
+    </svg>
+  </button>
+  <main id="main" class="page">
+    <header class="intro">
+      <p class="eyebrow location">São Paulo, Brazil</p>
+      <h1>Vinícius Anjos<span class="period">.</span></h1>
+      <p class="specialties">data engineering <span>·</span> data warehousing <span>·</span> python <span>·</span> spark <span>·</span> sql</p>
+      <nav class="social-links" aria-label="Social profiles">
+        <a href="https://blog.anjos.dev" target="_blank" rel="noopener noreferrer">Blog</a>
+        <a href="mailto:vinicius@anjos.dev">Email</a>
+        <a href="https://github.com/anjosdev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/anjosdev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </header>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title" class="eyebrow">About me</h2>
+      <p>I'm a data engineer building pipelines and applications that bring data closer to the people who need it. Currently studying distributed systems and Web3.</p>
+    </section>
+
+    <section class="experience" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <h2 id="experience-title" class="eyebrow">Experience</h2>
+      </div>
+      <article class="role">
+        <div class="role-heading role-heading-current">
+          <div><h3>iFood</h3><p class="position">Data Engineer</p></div>
+          <div class="role-meta">
+            <span class="date">Jan 2024 — present</span>
+            <span class="current"><span class="status-dot" aria-hidden="true"></span>current</span>
+          </div>
+        </div>
+        <ul class="role-description role-highlights">
+          <li>Built ETL pipelines that ingest raw data from APIs and applications into Databricks Lakehouse and transform it into curated datasets for analysis.</li>
+          <li>Developed dashboards and Slack agents that help users explore the data, along with applications that generate data-driven alerts.</li>
+        </ul>
+      </article>
+      <article class="role">
+        <div class="role-heading"><h3>State University of Campinas</h3><span class="date">Aug — Dec 2022</span></div>
+        <p class="position">Teaching Assistant</p>
+        <ul class="role-description role-highlights">
+          <li>Reviewed student code and taught programming fundamentals through mentoring and practical lessons.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="education" aria-labelledby="education-title">
+      <h2 id="education-title" class="eyebrow">Education</h2>
+      <div class="role-heading"><h3>Computer Programming</h3><span class="date">2022 — 2025</span></div>
+      <p class="organization">Certificate - State University of Campinas</p>
+    </section>
+
+  </main>
+</body>
+</html>
